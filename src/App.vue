@@ -25,6 +25,10 @@
   <ImageSection />
   <Scale />
   <Syllabus />
+  <!-- <Success /> -->
+  <Pricing />
+  <Counter />
+  <Form />
 </template>
 
 <script >
@@ -35,6 +39,10 @@ import Foundation from './components/Foundation.vue'
 import ImageSection from './components/ImageSection.vue'
 import Scale from './components/Scale.vue'
 import Syllabus from './components/Syllabus.vue'
+// import Success from './components/Success.vue'
+import Pricing from './components/Pricing.vue'
+import Counter from './components/Counter.vue'
+import Form from './components/Form.vue'
 
 export default {
   name: 'App',
@@ -44,7 +52,11 @@ export default {
     Foundation,
     ImageSection,
     Scale,
-    Syllabus
+    Syllabus,
+    // Success,
+    Pricing,
+    Counter,
+    Form
   }
 }
 
@@ -57,6 +69,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 body {
   background-color: #fff7e4;

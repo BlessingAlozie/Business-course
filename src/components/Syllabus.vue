@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="syllabus">
+  <div class="wrapper" >
     <h2 class="heading">Syllabus</h2>
 
     <div
@@ -14,7 +14,8 @@
         <p>{{ item.subtitle }}</p>
       </div>
       <div class="duration">
-        <!-- <img src="/cross.svg" alt="" /> More -->
+        <img src="/cross.svg" alt="" /> More
+
       </div>
     </div>
   </div>
@@ -28,90 +29,68 @@ const syllabus = [
     subtitle: "Welcome, expectations, accountability system",
   },
   {
-    date: "THU (8/21), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Discovering Your VA Superpower: Skills Assessment",
+    date: "SAT (Week 1), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Foundation & Business Idea Validation",
+    subtitle: "Validate ideas, feasibility analysis, entrepreneurial mindset",
   },
   {
-    date: "MON (8/25), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Setting Up Your Home Office on a Budget",
+    date: "SAT (Week 2), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Business Model & Planning",
+    subtitle: "Revenue streams, pricing, financial roadmap, business plan framework",
   },
   {
-    date: "THU (8/28), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Time Management and Work-from-Home Strategies for Moms",
+    date: "SAT (Week 3), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Legal Structure & Registration",
+    subtitle: "Choose structure, complete registration, ensure compliance",
   },
   {
-    date: "MON (9/1), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Client Communication and Time Management",
+    date: "SAT (Week 4), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Financial Management & Setup",
+    subtitle: "Accounting systems, cash flow management, business credit",
   },
   {
-    date: "THU (9/4), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Email Handling, Scheduling & Calendar Tools",
+    date: "SAT (Week 5), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Marketing Strategy & Brand Development",
+    subtitle: "Brand identity, multi-channel marketing, digital presence",
   },
   {
-    date: "MON (9/8), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Social Media Content Creation & Management",
+    date: "SAT (Week 6), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Sales & Customer Acquisition",
+    subtitle: "Sales skills, acquisition systems, retention & referrals",
   },
   {
-    date: "THU (9/11), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Basic Graphic Design Using Canva",
+    date: "SAT (Week 7), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Operations & Systems",
+    subtitle: "Automation, scalability, team planning",
   },
   {
-    date: "MON (9/15), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Creating Your First Client Proposal Template",
+    date: "SAT (Week 8), 10:00 AM WAT / 5:00 AM ET",
+    topic: "Launch Preparation & Growth Strategy",
+    subtitle: "Launch plan, long-term growth, accountability system",
   },
-  {
-    date: "THU (9/18), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Pricing Your Services Like a Pro",
-  },
-  {
-    date: "MON (9/22), 5:00 PM WAT / 12:00 PM ET",
-    topic: "How to Get Clients (Even Without Experience)",
-  },
-  {
-    date: "THU (9/25), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Using Freelance Platforms & Networking",
-  },
-  {
-    date: "MON (9/29), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Building Your Online Presence & Portfolio",
-  },
-  {
-    date: "THU (10/2), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Client Contracts, Invoicing & Getting Paid",
-  },
-  {
-    date: "MON (10/6), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Professional VA Communication: Write Like a Pro",
-  },
-  {
-    date: "THU (10/9), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Handling Feedback & Managing Difficult Clients",
-  },
-  {
-    date: "MON (10/13), 5:00 PM WAT / 12:00 PM ET",
-    topic: "Graduation Day: Pitch Yourself & Launch Your VA Journey!",
-  },
+
+
 ];
 </script>
 
 <style scoped>
-.container {
-  width: 100%;
-  padding: 0 100px;
-  margin-top: 100px;
-  color: #000000;
-  font-family: Nekst, sans-serif;
-}
 
+.wrapper{
+  width: 100%;
+
+}
 .heading {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 50px;
   text-transform: uppercase;
+  padding-left: 100px;
+  font-family: 'Instrument Serif', serif;
 }
 
 .module {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -120,6 +99,7 @@ const syllabus = [
   flex-wrap: wrap;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(29, 28, 28, 0.2);
+
 }
 
 .number {
@@ -128,24 +108,43 @@ const syllabus = [
   color: #000000;
   flex-shrink: 0;
   line-height: 1;
+  width: 20%
 }
 
 .info {
-  flex: 1;
+
   min-width: 250px;
+  /* margin-left: 12px; */
+ line-height: 1;
+ /* background-color: #fff; */
+ width: 60%;
 }
 
 .info h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 550;
+   font-family: 'Instrument Serif', serif;
+  /* margin-top: 10px; */
+  line-height: 0.5;
+
 }
 
 .info h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #FF4124;
+
+
+
 }
+
+.info p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #868686;
+
+}
+
 
 .duration {
   font-size: 1.2rem;
