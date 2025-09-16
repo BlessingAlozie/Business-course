@@ -6,7 +6,6 @@
       </h2>
       <h1>03 : 53 : 40</h1>
 
-
        <button class="hvr-icon-forward">
         Join The Bootcamp &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa-solid fa-arrow-right hvr-icon"></i>
       </button>
@@ -42,16 +41,18 @@
   text-transform: uppercase;
   width: 62%;
   margin: auto;
-  line-height: 7.5rem;
+  line-height: 3.5rem;
  text-align: center;
+ padding-top: 50px;
 
 }
 
 .container h1 {
   font-size: 11.5rem;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 40px;
   color: #FF4124;
+
 
 }
 
@@ -69,7 +70,7 @@
 }
 
  button {
-  margin-top: -10px;
+  /* margin-top: -30px; */
   background-color: #232323;
   color: white;
   border: none;

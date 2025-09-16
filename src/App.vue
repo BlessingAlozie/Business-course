@@ -25,7 +25,7 @@
   <ImageSection />
   <Scale />
   <Syllabus />
-  <!-- <Success /> -->
+  <Success />
   <Testimonial />
   <Pricing />
   <Counter />
@@ -43,7 +43,7 @@ import Foundation from './components/Foundation.vue'
 import ImageSection from './components/ImageSection.vue'
 import Scale from './components/Scale.vue'
 import Syllabus from './components/Syllabus.vue'
-// import Success from './components/Success.vue'
+import Success from './components/Success.vue'
 import Testimonial from './components/Testimonial.vue'
 import Pricing from './components/Pricing.vue'
 import Counter from './components/Counter.vue'
@@ -61,7 +61,7 @@ export default {
     ImageSection,
     Scale,
     Syllabus,
-    // Success,
+    Success,
      Testimonial,
     Pricing,
     Counter,

@@ -146,7 +146,31 @@ export default {
   font-size: 14px;
   font-weight: 400;
 }
-.tracker {
-  background-color: aqua;
+
+
+
+/* Adding custom pagination dot styles */
+/* :deep(.splide__pagination) {
+  bottom: -40px;
+} */
+
+:deep(.splide__pagination__page) {
+  background: #d1d1d1;
+  opacity: 0.7;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+:deep(.splide__pagination__page.is-active) {
+  background: #ff4124;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+:deep(.splide__pagination__page:hover) {
+  background: #ff4124;
+  opacity: 0.8;
 }
 </style>
