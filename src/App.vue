@@ -26,12 +26,16 @@
   <Scale />
   <Syllabus />
   <!-- <Success /> -->
+  <Testimonial />
   <Pricing />
   <Counter />
   <Form />
+  <Footer />
+
+
 </template>
 
-<script >
+<script>
 import { RouterLink } from 'vue-router'
 import HeroSection from './components/HeroSection.vue'
 import MainSection from './components/MainSection.vue'
@@ -40,9 +44,13 @@ import ImageSection from './components/ImageSection.vue'
 import Scale from './components/Scale.vue'
 import Syllabus from './components/Syllabus.vue'
 // import Success from './components/Success.vue'
+import Testimonial from './components/Testimonial.vue'
 import Pricing from './components/Pricing.vue'
 import Counter from './components/Counter.vue'
 import Form from './components/Form.vue'
+import Footer from './components/Footer.vue'
+
+
 
 export default {
   name: 'App',
@@ -54,12 +62,15 @@ export default {
     Scale,
     Syllabus,
     // Success,
+     Testimonial,
     Pricing,
     Counter,
-    Form
-  }
-}
+    Form,
+    Footer,
 
+
+  },
+}
 </script>
 
 <style>
