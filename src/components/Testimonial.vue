@@ -1,15 +1,4 @@
 <template>
-  <!-- <div class="container">
-    <div class="wrapper">
-      <div class="text">
-        <img src="/quote.png" alt="">
-          <p>I went from just an idea to launching my marketing consultancy in 30 days. The step-by-step guidance made everything clear, and now I’m fully booked with clients and confident growing my business.</p>
-
-          <b>Sarah Chibueze</b>
-        <h6><small>Founder, Marketing Consultancy</small></h6>
-      </div>
-      <div class="image"></div>
-    </div> -->
   <div class="splide container">
     <h1>What our students say about our program</h1>
     <div class="splide__track">
@@ -27,7 +16,6 @@
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
@@ -86,6 +74,7 @@ export default {
   background-color: #fffcfc;
   text-align: center;
   align-items: center;
+  padding-top: 40px;
 }
 .container h1 {
   align-self: center;
