@@ -22,8 +22,8 @@
     </div>
   </nav>
 
-  <!-- <HeroSection />
-  <MainSection />
+  <HeroSection />
+  <!-- <MainSection />
   <Foundation />
   <ImageSection />
   <Scale />
@@ -33,12 +33,12 @@
   <Pricing />
   <Counter />
   <Form />
-  <Footer /> -->
+  <Footer />  -->
 </template>
 
 <script>
-// import { RouterLink } from 'vue-router'
-// import HeroSection from './components/HeroSection.vue'
+ import { RouterLink } from 'vue-router'
+import HeroSection from './components/HeroSection.vue'
 // import MainSection from './components/MainSection.vue'
 // import Foundation from './components/Foundation.vue'
 // import ImageSection from './components/ImageSection.vue'
@@ -53,8 +53,8 @@
 
 export default {
   name: 'App',
-  // components: {
-  //   HeroSection,
+  components: {
+    HeroSection,
   //   MainSection,
   //   Foundation,
   //   ImageSection,
@@ -67,7 +67,7 @@ export default {
   //   Form,
   //   Footer,
 
-  // },
+  },
 
   data() {
     return {
@@ -160,9 +160,11 @@ nav {
   background: #ff4124 !important;
   height: 3px;
 }
-
-/* Mobile View */
-@media (max-width: 748px) {
+ .hamburger{
+  display: none;
+ }
+/* mobile responsiveness */
+@media (max-width: 968px) {
   nav {
     padding-left: 30px;
     padding-right: 30px;
@@ -215,7 +217,7 @@ nav {
 }
 
 /* Desktop view */
-@media (min-width: 769px) {
+ /* @media (min-width: 1000px) {
   .hamburger {
     display: none;
   }
@@ -231,5 +233,5 @@ nav {
     flex-direction: row;
     align-items: center;
   }
-}
+} */
 </style>
