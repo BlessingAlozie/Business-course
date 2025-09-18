@@ -24,49 +24,48 @@
 
   <HeroSection />
   <MainSection />
-   <Foundation />
-<ImageSection />
- <!-- <Scale /> -->
-    <Syllabus />
- <!--  <Success />
+  <Foundation />
+  <ImageSection />
+  <Scale />
+  <Syllabus />
+  <Success />
   <Testimonial />
   <Pricing />
   <Counter />
   <Form />
-  <Footer />   -->
+  <Footer />
 </template>
 
 <script>
- import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import HeroSection from './components/HeroSection.vue'
- import MainSection from './components/MainSection.vue'
+import MainSection from './components/MainSection.vue'
 import Foundation from './components/Foundation.vue'
- import ImageSection from './components/ImageSection.vue'
-// import Scale from './components/Scale.vue'
+import ImageSection from './components/ImageSection.vue'
+import Scale from './components/Scale.vue'
 import Syllabus from './components/Syllabus.vue'
-// import Success from './components/Success.vue'
-// import Testimonial from './components/Testimonial.vue'
-// import Pricing from './components/Pricing.vue'
-// import Counter from './components/Counter.vue'
-// import Form from './components/Form.vue'
-// import Footer from './components/Footer.vue'
+import Success from './components/Success.vue'
+import Testimonial from './components/Testimonial.vue'
+import Pricing from './components/Pricing.vue'
+import Counter from './components/Counter.vue'
+import Form from './components/Form.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     HeroSection,
-  MainSection,
-  Foundation,
-   ImageSection,
-  // Scale,
-  Syllabus,
-  //   Success,
-  //    Testimonial,
-  //   Pricing,
-  //   Counter,
-  //   Form,
-  //   Footer,
-
+    MainSection,
+    Foundation,
+    ImageSection,
+    Scale,
+    Syllabus,
+    Success,
+    Testimonial,
+    Pricing,
+    Counter,
+    Form,
+    Footer,
   },
 
   data() {
@@ -160,9 +159,9 @@ nav {
   background: #ff4124 !important;
   height: 3px;
 }
- .hamburger{
+.hamburger {
   display: none;
- }
+}
 /* mobile responsiveness */
 @media (max-width: 968px) {
   nav {
@@ -217,7 +216,7 @@ nav {
 }
 
 /* Desktop view */
- /* @media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .hamburger {
     display: none;
   }

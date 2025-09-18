@@ -5,7 +5,7 @@
         <h2>EVERYHING YOU NEED FOR</h2>
       </div>
       <div class="h1">
-        <h1><span>BUSINESS</span><br />SUCCESS</h1>
+        <h1><span>BUSINESS</span><br  class="break"/> SUCCESS</h1>
       </div>
     </div>
     <div class="image">
@@ -17,18 +17,14 @@
 <style>
 .containerr {
   max-width: 90%;
-  min-height: 100vh;
-  padding-left: 100px;
-  padding-right: 100px;
+  height: auto;
+  padding: 0 100px 100px;
   overflow-x: hidden;
   background-color: #000000;
-  padding-bottom: 100px;
 }
 
- .containerr .text {
+.containerr .text {
   color: #fff;
-  /* padding-top: 50px; */
-  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +45,6 @@
 
 .h1 h1 span {
   color: #ff4124;
-
 }
 
 .h2 {
@@ -66,14 +61,70 @@
   line-height: 1;
   font-family: 'Instrument Serif', serif;
 }
-/*
-.image {
-  background-color: #e15858;
-  height: 600px;
-}
+
 .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+/* 📱 Tablets */
+@media (max-width: 1024px) {
+  .containerr {
+    padding: 0 50px 80px;
+  }
+
+  .h1 h1 {
+    font-size: 5rem;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .containerr .text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .h1,
+  .h2 {
+    width: 100%;
+
+  }
+
+  .h1 h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+     margin-top: 50px;
+  }
+  .break{
+    display: none;
+  }
+}
+
+/* 📱 Small Mobile */
+@media (max-width: 480px) {
+  .containerr {
+    padding: 0 20px 60px;
+  }
+
+  .h1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
 </style>

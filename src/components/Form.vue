@@ -111,6 +111,9 @@ export default {
   .form-row {
     flex-direction: column;
   }
+.form-heading{
+   font-size: 3rem;
+  }
 }
 
 </style>

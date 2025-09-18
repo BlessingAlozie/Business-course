@@ -63,8 +63,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 150px;
-  margin-bottom: -40px;
+  height: auto;
+  /* margin-bottom: -40px; */
   background-color: #ffffff;
   padding-bottom: 80px;
   font-family: "montserrat";
