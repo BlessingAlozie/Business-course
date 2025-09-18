@@ -124,7 +124,7 @@
   .hero-section {
     padding: 15px;
     gap: 20px;
-    background-color: #4f0808;
+  
   }
 
   .hero-texts h1 {
@@ -143,13 +143,14 @@
     max-width: 280px;
   }
   .hero-image {
-    margin-top: -30px;
+    margin-top: -50px;
   }
 
   .hero-image img {
     max-height: 350px;
     width: 100%;
     object-fit: cover;
+    padding-top: -50px;
   }
 }
 </style>
