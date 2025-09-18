@@ -216,6 +216,8 @@ const syllabus = [
 
   .info h1 {
     font-size: 1.4rem;
+    font-weight: 600;
+
   }
 
   .info h3 {
@@ -264,12 +266,11 @@ const syllabus = [
   }
 
   .duration {
-    width: 100%;        /* full width below info */
-    text-align: left;   /* align left */
+    width: 100%; /* full width below info */
+    text-align: left; /* align left */
     font-size: 0.9rem;
-    margin-left: 0;     /* reset margin-left: auto */
-    flex-shrink: 0;     /* keep it stable */
+    margin-left: 0; /* reset margin-left: auto */
+    flex-shrink: 0; /* keep it stable */
   }
 }
-
 </style>
