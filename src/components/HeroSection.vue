@@ -6,9 +6,8 @@
         <span>REALITY</span>
       </h1>
       <p>
-        The complete step-by-step system that takes you from complete beginner
-        to confident business owner with a fully operational business plan in
-        Just 8 Weeks
+        The complete step-by-step system that takes you from complete beginner to confident business
+        owner with a fully operational business plan in Just 8 Weeks
       </p>
       <button class="hvr-icon-forward">
         Join The Bootcamp <i class="fa-solid fa-arrow-right hvr-icon"></i>
@@ -58,7 +57,7 @@
 
 .hero-texts p {
   font-size: 20px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   font-weight: 400;
   color: #000000;
   line-height: 1.5;
@@ -112,9 +111,7 @@
   .hero-image {
     order: 2;
     min-height: 350px;
-
   }
-
 
   .hero-texts h1 {
     font-size: 62px;
@@ -144,6 +141,9 @@
     padding: 12px 20px;
     width: 100%;
     max-width: 280px;
+  }
+  .hero-image {
+    margin-top: -30px;
   }
 
   .hero-image img {
