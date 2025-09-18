@@ -6,7 +6,8 @@
         <span>04 hours.</span> <b>REGISTER NOW TO save ₦10,000</b>
       </h2>
 
-      <h1>03 : 53 : 40</h1>
+      <h1>{{ format(hours) }} : {{ format(minutes) }} : {{ format(seconds) }}</h1>
+
 
       <button class="hvr-icon-forward">
         Join The Bootcamp &nbsp;&nbsp;&nbsp;&nbsp;
@@ -15,6 +16,50 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      hours: 4,
+      minutes: 0,
+      seconds: 0,
+      timer: null,
+    };
+  },
+  mounted() {
+    this.startCountdown();
+  },
+  beforeUnmount() {
+    clearInterval(this.timer); // cleanup
+  },
+  methods: {
+    startCountdown() {
+      this.timer = setInterval(() => {
+        if (this.seconds > 0) {
+          this.seconds--;
+        } else {
+          if (this.minutes > 0) {
+            this.minutes--;
+            this.seconds = 59;
+          } else {
+            if (this.hours > 0) {
+              this.hours--;
+              this.minutes = 59;
+              this.seconds = 59;
+            } else {
+              clearInterval(this.timer); // stop at 0
+            }
+          }
+        }
+      }, 1000);
+    },
+    format(num) {
+      return num < 10 ? "0" + num : num;
+    },
+  },
+};
+</script>
 
 <style scoped>
 .container-wrapper {
