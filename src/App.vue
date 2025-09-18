@@ -23,27 +23,27 @@
   </nav>
 
   <HeroSection />
-  <!-- <MainSection />
-  <Foundation />
-  <ImageSection />
-  <Scale />
-  <Syllabus />
-  <Success />
+  <MainSection />
+   <Foundation />
+<ImageSection />
+ <!-- <Scale /> -->
+    <Syllabus />
+ <!--  <Success />
   <Testimonial />
   <Pricing />
   <Counter />
   <Form />
-  <Footer />  -->
+  <Footer />   -->
 </template>
 
 <script>
  import { RouterLink } from 'vue-router'
 import HeroSection from './components/HeroSection.vue'
-// import MainSection from './components/MainSection.vue'
-// import Foundation from './components/Foundation.vue'
-// import ImageSection from './components/ImageSection.vue'
+ import MainSection from './components/MainSection.vue'
+import Foundation from './components/Foundation.vue'
+ import ImageSection from './components/ImageSection.vue'
 // import Scale from './components/Scale.vue'
-// import Syllabus from './components/Syllabus.vue'
+import Syllabus from './components/Syllabus.vue'
 // import Success from './components/Success.vue'
 // import Testimonial from './components/Testimonial.vue'
 // import Pricing from './components/Pricing.vue'
@@ -55,11 +55,11 @@ export default {
   name: 'App',
   components: {
     HeroSection,
-  //   MainSection,
-  //   Foundation,
-  //   ImageSection,
-  //   Scale,
-  //   Syllabus,
+  MainSection,
+  Foundation,
+   ImageSection,
+  // Scale,
+  Syllabus,
   //   Success,
   //    Testimonial,
   //   Pricing,

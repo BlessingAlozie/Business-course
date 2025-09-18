@@ -89,9 +89,9 @@ body {
 }
 
 /* Tablet styles */
-@media (min-width: 1024px) {
+/* @media (max-width: 1024px) {
   .hero-section {
-    padding: 0 50px;
+    padding: 0 100px;
   }
 
   .hero-texts {
@@ -99,7 +99,7 @@ body {
   }
 
   .hero-texts h1 {
-    font-size: 60px;
+    font-size: 70px;
     letter-spacing: 2px;
   }
 
@@ -111,8 +111,7 @@ body {
     font-size: 16px;
     padding: 18px 25px;
   }
-}
-
+} *
 /* Mobile styles */
 @media (max-width: 968px) {
   .hero-section {
