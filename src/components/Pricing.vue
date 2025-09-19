@@ -1,5 +1,5 @@
 <template>
-  <section class="pricing-section">
+  <section class="pricing-section" id="Pricing">
     <h2>Our <i>Flexible</i> Pricing Plans</h2>
     <p>Choose the track that best fits your journey to becoming a successful Virtual Assistant.</p>
 

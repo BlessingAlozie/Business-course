@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="Footer">
     <div class="footer-left">
       <!-- Social Media Links -->
       <div class="social-links">

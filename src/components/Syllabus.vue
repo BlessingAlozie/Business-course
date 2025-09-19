@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="Syllabus">
     <h2 class="heading">Syllabus</h2>
 
     <div class="module" v-for="(item, index) in syllabus" :key="index">

@@ -12,15 +12,16 @@
 
     <div class="menu" :class="{ show: isOpen }">
       <ul class="nav-links">
-        <li><a href="#Curriculum" class="hvr-underline-from-center">Curriculum</a></li>
+        <li><a href="#Syllabus" class="hvr-underline-from-center">Curriculum</a></li>
         <li><a href="#Testimonials" class="hvr-underline-from-center">Testimonials</a></li>
         <li><a href="#Pricing" class="hvr-underline-from-center">Pricing</a></li>
-        <li><a href="#Contact" class="hvr-underline-from-center">Contact</a></li>
+        <li><a href="#Footer" class="hvr-underline-from-center">Contact</a></li>
       </ul>
 
-      <a href=""><button class="cta-btn hvr-sweep-to-right">Enroll Now</button></a>
+      <button class="cta-btn hvr-sweep-to-right" @click="showModal = true">Enroll Now</button> v
     </div>
   </nav>
+  <Signup :showModal="showModal" @close="showModal = false" />
 
   <HeroSection />
   <MainSection />
@@ -50,6 +51,7 @@ import Pricing from './components/Pricing.vue'
 import Counter from './components/Counter.vue'
 import Form from './components/Form.vue'
 import Footer from './components/Footer.vue'
+import Signup from './components/Signup.vue'
 
 export default {
   name: 'App',
@@ -66,11 +68,13 @@ export default {
     Counter,
     Form,
     Footer,
+    Signup,
   },
 
   data() {
     return {
       isOpen: false,
+      showModal: false,
     }
   },
   methods: {
@@ -105,6 +109,8 @@ nav {
   box-sizing: border-box;
   align-content: center;
   font-family: 'Montserrat';
+  position: fixed;
+  z-index: 9999;
 }
 
 .brand img {
