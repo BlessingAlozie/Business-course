@@ -304,7 +304,6 @@ export default {
   }
 }
 
-
 /* --------------------- */
 @media (max-width: 768px) {
   .modal {
@@ -314,13 +313,13 @@ export default {
   }
 
   .modal-image {
-    width: 100%;   /* full width */
-    height: 200px; /* fixed height */
+    width: 100%; /* full width */
+    height: 400px; /* fixed height */
     flex: none;
   }
 
   .modal-form {
-    width: 100%;   /* full width */
+    width: 100%; /* full width */
     padding: 1.5rem;
   }
 
