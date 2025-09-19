@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  padding: 0 100px;
   min-height: 80vh;
   max-width: 100vw;
 }
@@ -124,7 +124,7 @@
   .hero-section {
     padding: 15px;
     gap: 20px;
-
+    padding-top: 50px;
   }
 
   .hero-texts h1 {
