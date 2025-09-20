@@ -1,8 +1,10 @@
 <template>
   <div v-if="showModal" class="modal-overlay" @click.self="$emit('close')">
+    
     <div class="modal">
       <!-- Left side (image with overlay text) -->
       <div class="modal-image">
+
         <div class="overlay-text">
           <h2>Join Our Program</h2>
           <p>Transform your skills and achieve your business goals with expert guidance.</p>
@@ -67,10 +69,9 @@
               <label for="country">Country</label>
               <select id="country" v-model="form.country" required>
                 <option value="" disabled>Select your country</option>
-                <option value="nigeria">Nigeria</option>
-                <option value="ghana">Ghana</option>
-                <option value="kenya">Kenya</option>
-                <option value="south-africa">South Africa</option>
+                <option v-for="country in countries" :key="country" :value="country.toLowerCase()">
+                  {{ country }}
+                </option>
               </select>
             </div>
           </div>
@@ -163,6 +164,12 @@ export default {
 </script>
 
 <style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -242,7 +249,7 @@ export default {
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: 1.5rem; /* reduced from 2.5rem */
 }
 .full-width {
   grid-column: span 2;
@@ -314,8 +321,13 @@ export default {
 
   .modal-image {
     width: 100%; /* full width */
-    height: 400px; /* fixed height */
+    height: 500px; /* fixed height */
     flex: none;
+    background-size: cover;
+    background-position: top ;
+    display: none;
+
+
   }
 
   .modal-form {
@@ -324,7 +336,7 @@ export default {
   }
 
   .form-grid {
-    grid-template-columns: 1fr; /* stack inputs vertically */
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -335,7 +347,13 @@ export default {
   .form-btn {
     width: 100%; /* button stretches full width */
     padding: 12px;
+    box-sizing: border-box;
   }
+  .modal-overlay {
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -346,5 +364,24 @@ export default {
   .modal-form {
     padding: 1rem;
   }
+  .modal-overlay {
+  overflow-y: auto;
+  padding: 2rem 1rem;
 }
+
+}
+@media (max-width: 360px) {
+  .modal-image {
+    background: none;
+    height: auto;
+  }
+
+  .overlay-text {
+    position: static;
+    background: none;
+    color: #222;
+    padding: 0;
+  }
+}
+
 </style>
