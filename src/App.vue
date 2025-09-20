@@ -12,10 +12,16 @@
 
     <div class="menu" :class="{ show: isOpen }">
       <ul class="nav-links">
-        <li><a href="#Syllabus" class="hvr-underline-from-center">Curriculum</a></li>
-        <li><a href="#Testimonials" class="hvr-underline-from-center">Testimonials</a></li>
-        <li><a href="#Pricing" class="hvr-underline-from-center">Pricing</a></li>
-        <li><a href="#Footer" class="hvr-underline-from-center">Contact</a></li>
+        <li>
+          <a href="#Syllabus" class="hvr-underline-from-center" @click="closeMenu">Curriculum</a>
+        </li>
+        <li>
+          <a href="#Testimonials" class="hvr-underline-from-center" @click="closeMenu"
+            >Testimonials</a
+          >
+        </li>
+        <li><a href="#Pricing" class="hvr-underline-from-center" @click="closeMenu">Pricing</a></li>
+        <li><a href="#Footer" class="hvr-underline-from-center" @click="closeMenu">Contact</a></li>
       </ul>
 
       <button class="cta-btn hvr-sweep-to-right" @click="showModal = true">Enroll Now</button>
@@ -81,6 +87,9 @@ export default {
     toggleMenu() {
       this.isOpen = !this.isOpen
     },
+    closeMenu() {
+      this.isOpen = false
+    },
   },
 }
 </script>
@@ -110,7 +119,7 @@ nav {
   align-content: center;
   font-family: 'Montserrat';
   position: fixed;
-   top: 0; /* Add this line */
+  top: 0; /* Add this line */
   left: 0;
   z-index: 9999;
 }
