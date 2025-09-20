@@ -8,57 +8,63 @@
 
       <h1>{{ format(hours) }} : {{ format(minutes) }} : {{ format(seconds) }}</h1>
 
-
-      <button class="hvr-icon-forward">
+      <button class="hvr-icon-forward" @click="showModal = true">
         Join The Bootcamp &nbsp;&nbsp;&nbsp;&nbsp;
         <i class="fa-solid fa-arrow-right hvr-icon"></i>
       </button>
     </div>
   </div>
+
+  <Signup :showModal="showModal" @close="showModal = false" />
 </template>
 
 <script>
+import Signup from '@/components/Signup.vue'
 export default {
+  components: {
+    Signup,
+  },
   data() {
     return {
+      showModal: false,
       hours: 4,
       minutes: 0,
       seconds: 0,
       timer: null,
-    };
+    }
   },
   mounted() {
-    this.startCountdown();
+    this.startCountdown()
   },
   beforeUnmount() {
-    clearInterval(this.timer); // cleanup
+    clearInterval(this.timer) // cleanup
   },
   methods: {
     startCountdown() {
       this.timer = setInterval(() => {
         if (this.seconds > 0) {
-          this.seconds--;
+          this.seconds--
         } else {
           if (this.minutes > 0) {
-            this.minutes--;
-            this.seconds = 59;
+            this.minutes--
+            this.seconds = 59
           } else {
             if (this.hours > 0) {
-              this.hours--;
-              this.minutes = 59;
-              this.seconds = 59;
+              this.hours--
+              this.minutes = 59
+              this.seconds = 59
             } else {
-              clearInterval(this.timer); // stop at 0
+              clearInterval(this.timer) // stop at 0
             }
           }
         }
-      }, 1000);
+      }, 1000)
     },
     format(num) {
-      return num < 10 ? "0" + num : num;
+      return num < 10 ? '0' + num : num
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -67,17 +73,16 @@ export default {
   font-family: 'Montserrat', sans-serif;
   background-color: #000000;
   text-align: center;
-padding-top: 80px;
-height: auto;
-
+  padding-top: 80px;
+  height: auto;
 }
 
 .container {
   color: #ffffff;
-   margin: auto;
-   padding-bottom: 80px;
-   padding-left: 50px;
-   padding-right: 50px;
+  margin: auto;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .container h2 {
@@ -87,18 +92,17 @@ height: auto;
   margin: auto;
   line-height: 3rem;
   max-width: 800px;
-
 }
 
 .container h1 {
   font-size: 8rem;
   font-weight: 700;
   margin-top: 40px;
-  color: #FF4124;
+  color: #ff4124;
 }
 
 .container span {
-  color: #FF4124;
+  color: #ff4124;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -122,7 +126,7 @@ button {
 }
 
 button:hover {
-  background-color: #FF4124;
+  background-color: #ff4124;
 }
 
 /* ✅ Tablet */
@@ -141,13 +145,10 @@ button:hover {
 }
 
 /* ✅ Mobile */
- @media (max-width: 625px) {
-
-
+@media (max-width: 625px) {
   .container h1 {
     font-size: 4rem;
   }
-
 }
 
 /* ✅ Small Mobile */

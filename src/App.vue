@@ -231,6 +231,9 @@ nav {
     right: 30px;
     z-index: 1000;
   }
+  .hamburger:hover{
+    color: #ff4124;
+  }
 }
 
 /* Desktop view */

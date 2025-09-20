@@ -16,7 +16,7 @@
 
 <style>
 .containerr {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   padding: 0 100px 100px;
   overflow-x: hidden;

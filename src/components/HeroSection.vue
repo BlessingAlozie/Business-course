@@ -9,7 +9,7 @@
         The complete step-by-step system that takes you from complete beginner to confident business
         owner with a fully operational business plan in Just 8 Weeks
       </p>
-      <button class="hvr-icon-forward">
+      <button class="hvr-icon-forward" @click="showModal = true">
         Join The Bootcamp <i class="fa-solid fa-arrow-right hvr-icon"></i>
       </button>
     </div>
@@ -19,8 +19,23 @@
       <img src="/hero-image.svg" alt="Hero Image" />
     </div>
   </div>
+
+  <Signup :showModal="showModal" @close="showModal = false" />
 </template>
 
+<script>
+import Signup from '@/components/Signup.vue'
+export default {
+  components: {
+    Signup,
+  },
+  data() {
+    return {
+      showModal: false,
+    }
+  },
+}
+</script>
 <style scoped>
 .hero-section {
   display: flex;
@@ -79,6 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .hero-image img {
   width: 100%;
@@ -117,6 +134,10 @@
   .hero-texts h1 {
     font-size: 62px;
     line-height: 1.1;
+  }
+  .hero- button {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

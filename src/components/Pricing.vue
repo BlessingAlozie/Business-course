@@ -198,9 +198,17 @@ ul li::before {
   font-size: 1.2rem;
   margin-top: auto;
 }
+.btn:hover{
+    background-color: #ff4124;
+    color: #ffffff;
+}
 .highButton{
   background-color: #ff4124;
   color: #000000;
+}
+.highButton:hover{
+   background-color: #000000;
+  color: #ff4124;
 }
 @media (max-width: 840px) {
   .card {
@@ -211,9 +219,12 @@ ul li::before {
     /* background-color: #4a0c0c; */
     margin-top: -0.04rem;
   }
+  .card h3{
+    font-size: 1.5rem;
+  }
 
   .pricing-section h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .highlight {
     margin-top: 20px;

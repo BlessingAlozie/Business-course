@@ -1,6 +1,8 @@
 <template>
   <div v-if="showModal" class="modal-overlay" @click.self="$emit('close')">
     <div class="modal">
+      <i class="fa-solid fa-xmark close-icon" @click="$emit('close')"></i>
+
 
        <!-- Left side (image with overlay text) -->
    <div class="modal-image">
@@ -13,6 +15,7 @@
 
       <!-- Right side (form) -->
       <div class="modal-form">
+
         <h2>Create Your Account</h2>
         <p class="subtitle">Enroll now and start learning today</p>
 
@@ -190,7 +193,24 @@ export default {
   max-width: 95%;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   animation: fadeIn 0.3s ease;
+  position: relative;
 }
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #000000;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.2s ease;
+}
+
+.close-icon:hover {
+  color: #ff4124;
+}
+
 
 /* Left image side */
 .modal-image {
@@ -240,6 +260,7 @@ export default {
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
+
 .modal-form form {
   display: flex;
   flex-direction: column;
@@ -369,24 +390,12 @@ export default {
   .modal-form {
     padding: 1rem;
   }
-  .modal-overlay {
+  /* .modal-overlay {
   overflow-y: auto;
   padding: 2rem 1rem;
-}
-
-}
-/* @media (max-width: 360px) {
-  .modal-image {
-    background: none;
-    height: auto;
-  }
-
-  .overlay-text {
-    position: static;
-    background: none;
-    color: #222;
-    padding: 0;
-  }
 } */
+
+}
+
 
 </style>
