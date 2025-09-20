@@ -94,8 +94,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
 }
 .hero-image img {
   width: 100%;
@@ -135,10 +133,6 @@ export default {
     font-size: 62px;
     line-height: 1.1;
   }
-  .hero- button {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 
 /* Small mobile */
@@ -165,8 +159,6 @@ export default {
     padding: 12px 20px;
     width: 100%;
     max-width: 280px;
-  }
-  .hero-image {
   }
 
   .hero-image img {
