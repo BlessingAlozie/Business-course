@@ -168,30 +168,17 @@ nav {
 .hamburger {
   display: none;
 }
-
+/* mobile responsiveness */
 @media (max-width: 968px) {
   nav {
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
   }
-
-  .hamburger {
-    display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative; /* no need for absolute */
-    z-index: 1001;
-  }
-
   .menu {
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* centers links vertically */
     align-items: center;
     position: fixed;
     top: 0;
@@ -199,68 +186,59 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: #fff7e4;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-  }
-
-  .menu.show {
-    display: flex;
-    transform: translateX(0);
+    position: relative;
+    z-index: 999;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .cta-btn {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 468px) {
-  nav {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
-  }
-
-  .brand img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 22px;
-    background: none;  /* remove background */
-    border: none;
-    cursor: pointer;
-    color: #000;       /* icon color */
-  }
-
-  .menu {
-    padding: 20px;
-  }
-
-  .nav-links {
     gap: 1rem;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li {
+    width: 100%;
   }
 
   .nav-links li a {
-    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
   }
 
-  .cta-btn {
-    font-size: 15px;
-    padding: 0.6rem 1rem;
+  .menu.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 1000;
   }
 }
 
+/* Desktop view */
+/* @media (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
 
-
+  .menu {
+    display: flex;
+    position: static;
+    background: none;
+    border: none;
+    flex-direction: row;
+  }
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+} */
 </style>
