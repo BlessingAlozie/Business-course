@@ -93,6 +93,7 @@
     padding: 20px;
     min-height: 100vh;
     gap: 30px;
+    margin-top: 130px;
   }
 
   .hero-texts,
@@ -126,6 +127,7 @@
     padding-top: -50px;
     margin-top: 50px;
     height: 100vh;
+    margin-top: 130px;
   }
 
   .hero-texts h1 {
@@ -144,7 +146,6 @@
     max-width: 280px;
   }
   .hero-image {
-
   }
 
   .hero-image img {

@@ -110,6 +110,8 @@ nav {
   align-content: center;
   font-family: 'Montserrat';
   position: fixed;
+   top: 0; /* Add this line */
+  left: 0;
   z-index: 9999;
 }
 
@@ -173,8 +175,7 @@ nav {
   nav {
     padding-left: 30px;
     padding-right: 30px;
-    position: relative;
-    z-index: 1001;
+    position: fixed;
   }
   .menu {
     display: none;
@@ -187,7 +188,6 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: #fff7e4;
-    position: fixed;
     z-index: 999;
   }
 
