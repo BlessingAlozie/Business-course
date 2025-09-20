@@ -3,19 +3,16 @@
     <div class="modal">
       <i class="fa-solid fa-xmark close-icon" @click="$emit('close')"></i>
 
-
-       <!-- Left side (image with overlay text) -->
-   <div class="modal-image">
-    <div class="overlay-text">
-      <h2>Join Our Program</h2>
-      <p>Transform your skills and achieve your business goals with expert guidance.</p>
-    </div>
-  </div>
-
+      <!-- Left side (image with overlay text) -->
+      <div class="modal-image">
+        <div class="overlay-text">
+          <h2>Join Our Program</h2>
+          <p>Transform your skills and achieve your business goals with expert guidance.</p>
+        </div>
+      </div>
 
       <!-- Right side (form) -->
       <div class="modal-form">
-
         <h2>Create Your Account</h2>
         <p class="subtitle">Enroll now and start learning today</p>
 
@@ -211,7 +208,6 @@ export default {
   color: #ff4124;
 }
 
-
 /* Left image side */
 .modal-image {
   flex: 1;
@@ -219,7 +215,6 @@ export default {
   object-fit: cover;
   position: relative;
   min-height: 300px; /* ensures visibility on smaller screens */
-
 }
 .overlay-text {
   position: absolute;
@@ -340,9 +335,8 @@ export default {
     flex-direction: column; /* stack vertically */
     width: 95%;
     height: auto;
-     border-radius: 16px;
-     margin-top: 80px;
-
+    border-radius: 16px;
+    margin-top: 80px;
   }
 
   .modal-image {
@@ -350,10 +344,8 @@ export default {
     height: 500px; /* fixed height */
     flex: none;
     background-size: cover;
-    background-position: top ;
+    background-position: top;
     display: none;
-
-
   }
 
   .modal-form {
@@ -376,10 +368,9 @@ export default {
     box-sizing: border-box;
   }
   .modal-overlay {
-  overflow-y: auto;
-  padding: 2rem 1rem;
-}
-
+    overflow-y: auto;
+    padding: 2rem 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -390,12 +381,9 @@ export default {
   .modal-form {
     padding: 1rem;
   }
-  /* .modal-overlay {
-  overflow-y: auto;
-  padding: 2rem 1rem;
-} */
-
+  .modal-form h2 {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
 }
-
-
 </style>

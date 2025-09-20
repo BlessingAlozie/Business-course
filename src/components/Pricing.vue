@@ -12,7 +12,7 @@
           <li>Core Virtual Assistant Training</li>
           <li>Access to Mom’s Support Community</li>
         </ul>
-        <button class="btn">Get Started</button>
+        <button class="btn" @click="showModal = true">Get Started</button>
       </div>
 
       <!-- Card 2 (highlighted) -->
@@ -27,7 +27,7 @@
             <li>1-on-1 Mentoring Sessions</li>
             <li>Client Template Library</li>
           </ul>
-          <button class="btn highButton">Get Started</button>
+          <button class="btn highButton" @click="showModal = true">Get Started</button>
         </div>
       </div>
 
@@ -43,12 +43,26 @@
           <li>Core Virtual Assistant Training</li>
           <li>Access to Mom’s Support Community</li>
         </ul>
-        <button class="btn">Get Started</button>
+        <button class="btn" @click="showModal = true">Get Started</button>
       </div>
     </div>
   </section>
+   <Signup :showModal="showModal" @close="showModal = false" />
 </template>
 
+<script>
+import Signup from '@/components/Signup.vue'
+export default {
+  components: {
+    Signup,
+  },
+  data() {
+    return {
+      showModal: false,
+    }
+  },
+}
+</script>
 <style scoped>
 .pricing-section {
   width: 100%;
