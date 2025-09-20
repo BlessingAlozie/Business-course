@@ -1,15 +1,15 @@
 <template>
   <div v-if="showModal" class="modal-overlay" @click.self="$emit('close')">
-    
     <div class="modal">
-      <!-- Left side (image with overlay text) -->
-      <div class="modal-image">
 
-        <div class="overlay-text">
-          <h2>Join Our Program</h2>
-          <p>Transform your skills and achieve your business goals with expert guidance.</p>
-        </div>
-      </div>
+       <!-- Left side (image with overlay text) -->
+   <div class="modal-image">
+    <div class="overlay-text">
+      <h2>Join Our Program</h2>
+      <p>Transform your skills and achieve your business goals with expert guidance.</p>
+    </div>
+  </div>
+
 
       <!-- Right side (form) -->
       <div class="modal-form">
@@ -198,6 +198,8 @@ export default {
   background: url('/signup-image.svg') center/cover no-repeat;
   object-fit: cover;
   position: relative;
+  min-height: 300px; /* ensures visibility on smaller screens */
+
 }
 .overlay-text {
   position: absolute;
@@ -317,6 +319,9 @@ export default {
     flex-direction: column; /* stack vertically */
     width: 95%;
     height: auto;
+     border-radius: 16px;
+     margin-top: 80px;
+
   }
 
   .modal-image {
@@ -370,7 +375,7 @@ export default {
 }
 
 }
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .modal-image {
     background: none;
     height: auto;
@@ -382,6 +387,6 @@ export default {
     color: #222;
     padding: 0;
   }
-}
+} */
 
 </style>
